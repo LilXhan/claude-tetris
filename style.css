@@ -250,3 +250,129 @@ kbd {
 #restart-btn:hover {
   background: var(--accent-hover);
 }
+
+.secondary-btn {
+  margin-top: 0;
+  background: transparent;
+  color: var(--controls-color);
+  border: 1px solid var(--kbd-border);
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.secondary-btn:hover {
+  color: var(--fg);
+  border-color: var(--accent);
+}
+
+.start-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: var(--accent);
+}
+
+/* ---- Tabla de records ---- */
+.highscores {
+  width: 100%;
+  min-width: 260px;
+}
+
+.highscores h2 {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--label-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+#overlay-highscores-table,
+#start-highscores-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+#overlay-highscores-table th,
+#start-highscores-table th {
+  color: var(--label-color);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--board-border);
+}
+
+#overlay-highscores-table td,
+#start-highscores-table td {
+  color: var(--fg);
+  padding: 4px 6px;
+  text-align: left;
+}
+
+#overlay-highscores-table td.empty-row,
+#start-highscores-table td.empty-row {
+  text-align: center;
+  color: var(--controls-color);
+  font-style: italic;
+}
+
+.highscore-highlight td {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.stats-line {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--controls-color);
+  text-align: center;
+}
+
+.name-entry {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.name-entry.hidden {
+  display: none;
+}
+
+#name-input {
+  background: var(--board-bg);
+  border: 1px solid var(--board-border);
+  border-radius: 4px;
+  color: var(--fg);
+  padding: 6px 10px;
+  font-size: 13px;
+  width: 140px;
+}
+
+#name-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+#save-name-btn {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#save-name-btn:hover {
+  background: var(--accent-hover);
+}

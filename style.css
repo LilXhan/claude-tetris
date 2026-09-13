@@ -42,6 +42,31 @@ body.light {
   --overlay-title: #c62828;
 }
 
+/* ---- Skins visuales ---- */
+body.skin-neon {
+  --board-bg: #000000;
+  --board-border: #003b3b;
+  --grid-line: #001414;
+  --accent: #39ff14;
+  --accent-contrast: #04150a;
+  --accent-hover: #6dff54;
+  --title-shadow: rgba(57, 255, 20, 0.6);
+}
+
+body.skin-pastel {
+  --board-bg: #fdf6f2;
+  --board-border: #ecd9e8;
+  --grid-line: #f2e2ee;
+  --accent: #f4a6c1;
+  --accent-hover: #f7bdd1;
+}
+
+body.skin-pixel {
+  --board-bg: #12121a;
+  --board-border: #2a2a3a;
+  --grid-line: #24242e;
+}
+
 body {
   background: var(--bg);
   color: var(--fg);
@@ -166,6 +191,23 @@ body {
 }
 
 .switch input:focus-visible + .slider {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---- Selector de skin ---- */
+#skin-select {
+  background: var(--kbd-bg);
+  color: var(--fg);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#skin-select:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
